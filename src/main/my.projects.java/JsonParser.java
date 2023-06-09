@@ -39,12 +39,7 @@ public class JsonParser {
             newLoggerValue("No Uperio", Level.INFO);
             sendMessageToBot(bot, THERE_ARE_NO_UPERIO_NOW_YOU_WILL_GET_A_MESSAGE_WHEN_UPERIO_APPEARS);
         } else {
-//            if (resultString.equals(NEW_DATE_IN_DATA)) {
-//                logger.log(Level.INFO, "No Uperio");
-//                sendMessageToBot(bot, THERE_ARE_NO_UPERIO_NOW_YOU_WILL_GET_A_MESSAGE_WHEN_UPERIO_APPEARS);
-//            } else {
             printLongStringToBot(resultString, bot);
-//            }
         }
     }
 
