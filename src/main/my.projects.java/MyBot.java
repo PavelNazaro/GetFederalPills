@@ -143,7 +143,6 @@ public class MyBot extends TelegramLongPollingBot {
 
             this.idsSet = idsSet;
             this.lastDay = data.getLastDay();
-//            this.lastDay = (String) dataJson.get(LAST_DAY);
 
         } catch (IOException e) {
             newLoggerValue("MyBot Error 5: " + e.getMessage(), Level.WARNING);
@@ -151,7 +150,6 @@ public class MyBot extends TelegramLongPollingBot {
     }
 
     protected void writeDataToJsonFile() {
-//        Data data = new Data(LocalDate.now().toString(), (String[]) idsSet.toArray());
         JSONObject jsonObject = new JSONObject();
         jsonObject.put(LAST_DAY, LocalDate.now());
         jsonObject.put(IDS, idsSet);

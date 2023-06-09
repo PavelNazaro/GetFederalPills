@@ -88,7 +88,7 @@ public class JsonParser {
             bot.writeDataToJsonFile();
             return new StringBuilder(NEW_DATE_IN_DATA).append(findUperio(federalDTOS, getAllData));
         }
-        return new StringBuilder();//.append("Good");//todo Remove!!
+        return new StringBuilder();
     }
 
     private static StringBuilder findUperio(ArrayList<FederalDTO> federalDTOS, boolean getAllData) {
@@ -113,7 +113,6 @@ public class JsonParser {
                 sendMessageToBot(bot, str.subSequence(j, j += MAX_MESSAGE_LENGTH).toString());
             }
         }
-//        sendMessageToBot(bot, str.subSequence(j, 1000).toString());//todo Remove!!
     }
 
     private static ArrayList<FederalDTO> getFederalDTOSFromJson(MyBot bot) throws Exception {
